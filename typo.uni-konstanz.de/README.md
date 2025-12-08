@@ -4,7 +4,7 @@
 
 ## ArchiveReady
 
-![](/lingvarium.org/ArchiveReady.png)
+![](/typo.uni-konstanz.de/ArchiveReady.png)
 
 У [данного сайта](https://archiveready.com/check?url=http%3A%2F%2Flingvarium.org%2Findex.shtml) средний рейтинг архивируемости: наиболее низкий показатель у параметра доступности (Accessibility), у остальных параметров показатели также не очень высокие. У сайта отсутствует sitemap, в файле robots.txt есть команды disallow, закрывающие доступ к некоторым областям сайта. Существуют изображения, прикрепленные с других сайтов, есть устаревшие html-теги, а также java-script вставки, также осложняющие полноценную архивацию сайта.
 
@@ -12,9 +12,9 @@
 
 В результате проверки обнаружилось, что скачалась лишь основная страница сайта, ни один из разделов сайта не доступен. В таком виде архив, к сожалению, практически бесполезен.
 
-![](/lingvarium.org/ReplayWebpage1.png)
+![](/typo.uni-konstanz.de/ReplayWebpage1.png)
 
-![](/lingvarium.org/ReplayWebpage2.png)
+![](/typo.uni-konstanz.de/ReplayWebpage2.png)
 
 ## metawarc
 
