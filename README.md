@@ -1,6 +1,6 @@
 # Проект по курсу «Цифровая архивация современности»
 
-В этом репозитории собрана [коллекция сайтов](https://drive.google.com/drive/folders/1qPiALfm-brgv8m8pdS4npaDrIcVmK-SS?usp=sharing) на лингвистическую тематику. Сайты архивировались с помощью [wpull](https://github.com/ArchiveTeam/wpull), результаты были проанализированы с помощью сервисов [ArchiveReady](https://archiveready.com/), [Replay Webpage](https://replayweb.page/) и утилиты [metawarc](https://github.com/datacoon/metawarc). В репозитории представлен подробный анализ архивации каждого из перечисленных сайтов.
+В этом репозитории собрана [коллекция сайтов](https://drive.google.com/drive/folders/1qPiALfm-brgv8m8pdS4npaDrIcVmK-SS?usp=sharing) на лингвистическую тематику. Сайты архивировались с помощью [wpull](https://github.com/ArchiveTeam/wpull) и оценивались с помощью ресурса [ArchiveReady](https://archiveready.com/), результаты были проанализированы с помощью сервиса [Replay Webpage](https://replayweb.page/) и утилиты [metawarc](https://github.com/datacoon/metawarc). В репозитории представлен подробный анализ архивации каждого из перечисленных сайтов.
 
 ## Описание коллекции
 
