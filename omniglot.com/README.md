@@ -1,6 +1,6 @@
-# Omniglot (не дописан)
+# Omniglot
 
-[Omniglot](https://www.omniglot.com/conscripts/natlangs.htm) – это онлайн-энциклопедия систем письма и языков, в том числе содержащая в себе отдельные наьоры фраз на разных языках и советы по изучению.
+[Omniglot](https://www.omniglot.com/conscripts/natlangs.htm) – это онлайн-энциклопедия систем письма и языков, в том числе содержащая в себе отдельные наборы фраз на разных языках и советы по изучению.
 
 ## ArchiveReady
 
@@ -18,30 +18,36 @@
 
 ## metawarc
 
-`metawarc analyze lingvarium.org.warc.gz`
+`metawarc analyze www.omniglot.com.warc.gz`
 
-| mimes      | files | size   | share      |
-|------------|-------|--------|------------|
-| text/html  | 2     | 780190 | 99.9686    |
-| text/plain | 1     | 245    | 0.0313927  |
-| #total     | 3     | 780435 | 100        |
+| mimes           | files |    size |     share |
+|-----------------|------:|--------:|----------:|
+| text/html       |    56 | 1850054 |  93.0644  |
+| application/xml |     1 |   74299 |   3.73751 |
+| image/gif       |    24 |   51959 |   2.61373 |
+| image/png       |     2 |   11258 |   0.566318|
+| text/plain      |     1 |     359 |   0.018059|
+| #total          |    84 | 1987929 | 100       |
 	
-Закономерно, так как скачалась только основная страница-оглавление, бОльшую часть архива занимает её html-код (хотя и он не превышает даже мегабайта).
+Так как все страницы в основном текстовые, большую часть занимают именно html-файлы. Также присутствуют картинки и gif-изображения.
 	 
-`metawarc metadata --output meta.jsonl lingvarium.org.warc.gz`
+`metawarc metadata --output meta.jsonl www.omniglot.com.warc.gz`
 
-Никаких метаданных сохранить не получилось по той же причине.
+Файлы с метаданными доступны в **meta.jsonl**. Там перечислены некоторые характеристики двух встретившихся png-изображений. Ошибки при извлечении метаданных записаны в файле **metadata_errors.txt**.
  
-`metawarc index  lingvarium.org.warc.gz`
+`metawarc index www.omniglot.com.warc.gz`
  
 Эта команда индексирует архив и создаёт базу данных, по которой можно производить дополнительный анализ.
 
 `metawarc stats -m mimes`
 
-| mime                     |   size | count |
-|--------------------------|-------:|------:|
-| text/html                |  10564 |     1 |
-| text/html; charset=utf-8 | 769626 |     1 |
-| text/plain               |    245 |     1 |
+| mime                     |    size | count |
+|--------------------------|--------:|------:|
+| application/xml          |   74299 |     1 |
+| image/gif                |   51959 |    24 |
+| image/png                |   11258 |     2 |
+| text/html                |    1604 |     1 |
+| text/html; charset=UTF-8 | 1848450 |    55 |
+| text/plain               |     359 |     1 |
 
 Таблица практически дублирует информацию команды analyze выше.
